@@ -1,0 +1,123 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  display: block;
+  width: 80%; /* Ajuste moderado del tamaño */
+  max-width: 200px; /* Limitar ancho máximo */
+  height: auto;
+  object-fit: contain; /* Mantener buena proporción */
+  margin: 0 auto;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)); /* Sombra para destacar la imagen */
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card-body button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-body button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+  width: 150px; /* Tamaño intermedio para buena calidad */
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)); /* Sombra para destacar */
+}
+
+.modal-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: #555;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #ff4d4d;
+}
+
+/* Global button styles */
+button {
+  outline: none;
+}
